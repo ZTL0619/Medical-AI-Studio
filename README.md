@@ -21,9 +21,9 @@ The segmentation workflow combines Fourier-domain feature extraction, shifted-wi
 ### 2.1 3D Medical Image Segmentation
 
 <p align="center">
-  <img src="assets/segmentation/3d_gt_vs_prediction.gif" alt="Ground truth and predicted segmentation displayed side by side with synchronized 3D rotation" width="900" />
+  <img src="assets/segmentation/3d_gt_vs_prediction.gif" alt="Interactive demonstration of medical image segmentation and semi-supervised segmentation" width="900" />
 </p>
-<p align="center"><em>Ground Truth (left) and Prediction (right). Synchronized 360° rotation for direct comparison of anatomical shape and spatial structure.</em></p>
+<p align="center"><em>Interactive demonstration of medical image segmentation and semi-supervised segmentation workflows.</em></p>
 
 ### 2.2 Medical Multimodal LLM
 
