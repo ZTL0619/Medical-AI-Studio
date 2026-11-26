@@ -34,20 +34,6 @@ The segmentation workflow combines Fourier-domain feature extraction, shifted-wi
 </p>
 <p align="center"><em>Image-conditioned medical question answering through an interactive conversation interface.</em></p>
 
-**GraphRAG-enhanced Medical Question Answering**
-
-<p align="center">
-  <img src="assets/llm/graphrag_qa.png" alt="Medical question answering with retrieved evidence and source references" width="900" />
-</p>
-<p align="center"><em>Medical knowledge retrieval and evidence-augmented answer generation with source references.</em></p>
-
-**Parameter-efficient Fine-tuning**
-
-<p align="center">
-  <img src="assets/llm/qlora_finetuning.png" alt="QLoRA fine-tuning interface with model and GPU configuration" width="900" />
-</p>
-<p align="center"><em>Configurable LoRA/QLoRA training and GPU resource management.</em></p>
-
 ## 3. Technical Highlights
 
 ### 3.1 3D Medical Image Segmentation
