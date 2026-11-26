@@ -1,0 +1,2 @@
+# Optional vLLM production serving stack (Linux/CUDA only).
+vllm>=0.22; sys_platform == "linux"

@@ -1,0 +1,21 @@
+{
+  "dataset": "LA",
+  "model": "vnet",
+  "feature_learning": "none",
+  "semi_supervision": "dnp",
+  "labeled_percent": 5,
+  "seed": 1337,
+  "workers": 4,
+  "parallel_mode": "single",
+  "gpu_ids": [0],
+  "mixed_precision": false,
+  "sync_batchnorm": false,
+  "linear_lr_scaling": false,
+  "batch_size": 4,
+  "labeled_batch_size": 2,
+  "learning_rate": 0.01,
+  "max_iterations": 15000,
+  "validation_interval": 200,
+  "save_interval": 1000,
+  "log_interval": 10
+}

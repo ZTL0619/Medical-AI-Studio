@@ -1,0 +1,26 @@
+{
+  "experiment_name": "medgemma_qlora_multigpu",
+  "base_model": "google/medgemma-4b-it",
+  "dataset_path": "examples/foundation_dataset_sample.jsonl",
+  "gpu_ids": [
+    0,
+    1
+  ],
+  "distributed_strategy": "ddp",
+  "peft_strategy": "qlora",
+  "train_precision": "bf16",
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "num_train_epochs": 1.0,
+  "learning_rate": 2e-05,
+  "lora_rank": 16,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "lora_target_modules": "all-linear",
+  "gradient_checkpointing": true,
+  "serving_strategy": "data_parallel",
+  "serving_precision": "bf16",
+  "rag_enabled": false,
+  "validation_dataset_path": null,
+  "validation_split": 0.1
+}

@@ -1,0 +1,2 @@
+# Optional DeepSpeed ZeRO-2 backend.
+deepspeed>=0.17

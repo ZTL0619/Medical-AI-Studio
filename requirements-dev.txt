@@ -1,0 +1,2 @@
+pytest>=8,<10
+tomli>=2; python_version < "3.11"

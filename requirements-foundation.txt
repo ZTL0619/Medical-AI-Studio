@@ -1,0 +1,16 @@
+# Optional medical foundation-model training stack.
+# Install after the base project environment is ready.
+transformers>=4.56
+torchvision>=0.24
+accelerate>=1.10
+peft>=0.17
+bitsandbytes>=0.47
+datasets>=4.0
+trl>=1.12,<2
+huggingface-hub>=0.34
+Pillow>=10
+requests>=2.31
+pypdf>=5.0
+jieba>=0.42.1
+
+modelscope>=1.20

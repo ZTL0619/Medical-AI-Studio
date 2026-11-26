@@ -1,0 +1,1 @@
+{"id":"demo-001","image":"synthetic_demo_image.png","question":"This is a synthetic non-clinical demo image. Briefly describe its visible structure.","answer":"A bright circular region is visible near the center on a darker grayscale background.","system":"You are testing a multimodal pipeline. This image is synthetic and not clinical data."}

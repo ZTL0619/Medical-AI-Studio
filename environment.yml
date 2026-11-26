@@ -1,0 +1,27 @@
+name: medical-ai-studio
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.11.0
+  - pytorch-cuda=12.8
+  - numpy>=1.23
+  - scipy>=1.9
+  - h5py>=3.7
+  - nibabel>=5.0
+  - tensorboard>=2.12
+  - tqdm>=4.64
+  - pandas>=2.0
+  - pip:
+      - MedPy>=0.4.0
+      - einops>=0.6
+      - streamlit>=1.40
+      - psutil>=5.9
+      - plotly>=5.18
+      - scikit-image>=0.20
+      - requests>=2.31
+# Prefer pyproject.toml + uv for the maintained environment.
+# Foundation-model, DeepSpeed and vLLM stacks are intentionally optional.

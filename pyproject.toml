@@ -1,0 +1,55 @@
+[project]
+name = "medical-image-segmentation-studio"
+version = "1.2.4"
+description = "Engineering-oriented 3-D medical image segmentation and medical multimodal foundation-model studio"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "torch==2.11.0",
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "h5py>=3.7",
+    "medpy>=0.4.0",
+    "nibabel>=5.0",
+    "tensorboard>=2.12",
+    "tqdm>=4.64",
+    "einops>=0.6",
+    "streamlit>=1.40",
+    "pandas>=2.0",
+    "psutil>=5.9",
+    "plotly>=5.18",
+    "scikit-image>=0.20",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+foundation = [
+    "transformers>=4.56",
+    "torchvision>=0.24",
+    "accelerate>=1.10",
+    "peft>=0.17",
+    "bitsandbytes>=0.47",
+    "datasets>=4.0",
+    "trl>=1.12,<2",
+    "huggingface-hub>=0.34",
+    "Pillow>=10",
+    "pypdf>=5.0",
+    "jieba>=0.42.1",
+    "modelscope>=1.20",
+]
+deepspeed = [
+    "deepspeed>=0.17",
+]
+serving = [
+    "vllm>=0.22; sys_platform == 'linux'",
+]
+
+[tool.uv]
+environments = ["sys_platform == 'linux'"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
